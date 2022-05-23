@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #e7e7e7;
+    min-height: 150vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: #e7e7e7;
+}
+
+.titulo {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 0px 20px;
+}
+
+.menu li {
+    background-color: #fff;
+    padding: 10px 25px;
+}
+
+.menu li:hover {
+    cursor: pointer;
+}
+
+.grid {
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.listra {   
+    position: absolute;
+    border: 2px solid red;
+    width: 70px;
+    background: red;
+    top: 40px;
+    right: 565px;
+}
+
+.imgGrid {
+    max-width: 100%;
+    grid-column: 2;
+}
+
+.text {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    padding: 40px 40px;
+    place-content: center;
+}
+
+.text h2 {
+    place-self: start end;
+    font-size: 40px;
+}
+
+.text p {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.text a {
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: red;
+    place-self: start end;
+}
+
+.grid-vantagens {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-vantagens h2 {
+    align-self: center;
+    text-align: right;
+    margin-right: 10px;
+    color: #9f9f9f;
+    font-size: 70px;
+}
+
+.vantagens {
+    background: #ffffff;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    min-height: 50vh;
+    place-items: center;
+}
+
+.vantagens div img {
+    max-width: 16px;
+    width: 100%;
+}
+
+.vantagens div h3 {
+    display: inline;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.vantagens div div {
+    max-width: 70%;
+}
+
+.vantagens div div p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
